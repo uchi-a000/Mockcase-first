@@ -1,0 +1,40 @@
+.login-form__inner {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0 200px 0;
+}
+
+@media screen and (max-width: 1200px) {
+    .login-form__form {
+        width: 60vw;
+    }
+}
+
+.login-form__group {
+    margin-bottom: 32px;
+}
+
+
+.login-form__group-input {
+    display: block;
+    padding: 8px 12px;
+    width: 100%;
+    height: 48px;
+    margin-right: 200px;
+    border-radius: 5px;
+    border: 1px solid #909090;
+    background-color: #F2F2F2;
+    color: #909090;
+}
+
+.register__link {
+    text-align: center;
+}
+
+.register-text {
+    color: #909090;
+}
+
+.register-form__btn {
+    color: blue;
+}

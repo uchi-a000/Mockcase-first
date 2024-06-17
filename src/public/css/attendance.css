@@ -1,0 +1,175 @@
+/* 日付一覧 */
+.attendance-form__date {
+    font-weight: bold;
+    padding: 10px;
+}
+
+label {
+    font-weight: 100;
+}
+
+.date {
+    position: relative;
+    padding: 8px 12px;
+    min-width: 140px;
+    border: 1px solid #E3DED9;
+    background-color: #F4F4F4;
+    font-weight: 100;
+}
+
+.date::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+.date::after {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #4282c9;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    content: "";
+    transform: translateY(-50%);
+}
+
+.attendance-form__date-link {
+    box-sizing: border-box;
+    width: 35px;
+    display: inline-block;
+    border: 1px solid blue;
+    color: blue;
+    text-decoration: none;
+}
+
+.attendance-date__search {
+    text-align: left;
+}
+
+.attendance__alert__date {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* ユーザー詳細テーブル */
+.attendance__table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.attendance__row {
+    border-top: 1px solid #909090;
+    text-align: center;
+    height: 70px;
+}
+
+.attendance__label,
+.attendance__data {
+    padding: 16px 8px;
+}
+
+.attendance__label:last-of-type,
+.attendance__data:last-of-type {
+    padding-right: 48px;
+}
+
+.attendance__label {
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* ユーザー一覧キーワード検索 */
+.attendance-form__keyword-input{
+    padding: 8px 12px;
+        /* placeholderが表示される最低限の幅を最小値とする */
+    min-width: 324px;
+}
+
+.search-form__button {
+    padding: 10px;
+}
+
+.search-form__button-submit {
+    padding: 5px 20px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4282c9;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.search-form__button-submit__reset {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #8cbaee;
+    color: #FFF;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+
+/* ユーザー毎の勤務表 */
+.attendance__alert__month{
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.attendance__alert{
+    text-align: center;
+    font-weight: bold;
+    font-size: 17px;
+}
+
+.attendance-form__month {
+    padding: 10px;
+}
+
+.month {
+    position: relative;
+    padding: 8px 12px;
+    min-width: 140px;
+    border: 1px solid #E3DED9;
+    background-color: #F4F4F4;
+}
+
+.month::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+.month::after {
+    position: absolute;
+    top: 50%;
+    right: 12px;
+    width: 0;
+    height: 0;
+    border-top: 12px solid #4282c9;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+    content: "";
+    transform: translateY(-50%);
+}
+

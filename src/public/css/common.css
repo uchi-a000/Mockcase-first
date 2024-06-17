@@ -1,0 +1,125 @@
+html,
+body {
+    height: 100%;
+}
+
+.content{
+    background-color: #f2f2f2;
+    height: 650px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+    background-color: #fff;
+    color: #000;
+}
+
+.header-ttl {
+    font-size: 24px;
+    width: 80px;
+}
+
+.header-nav-list {
+    display: flex;
+    font-weight: bold;
+}
+
+.header-nav-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+.header-nav__item{
+    padding: 20px;
+}
+
+.heading {
+    text-align: center;
+    padding-top: 70px;
+
+}
+
+.header-nav__link{
+    color: #000;
+    text-decoration: none;
+}
+
+.header-nav__button{
+    border: none;
+    background-color: #FFF;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn {
+    display: block;
+    padding: 10px 150px;
+    border: none;
+    border-radius: 5px;
+    background-color: blue;
+    color: #FFF;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    color: #000;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 12px;
+}
+
+.form__error{
+    color: red;
+}
+
+/* ページネーション */
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 35px;
+}
+
+.pagination li:not(.active) {
+    border: 1px solid #E0DFDE;
+    padding: 10px 20px;
+    background-color: #FFF;
+}
+
+.pagination li:not(:last-child) {
+    border-right: none;
+}
+
+.pagination a {
+    color: #4282c9;
+    text-decoration: none;
+    position: relative;
+}
+
+.pagination a::before {
+    content: '';
+    /* 疑似要素の内容を空にする */
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -10px;
+    right: -10px;
+}
+
+
+.active {
+    padding: 10px 20px;
+    border: 1px solid #4282c9;
+    background-color: #4282c9;
+    color: #FFF;
+}

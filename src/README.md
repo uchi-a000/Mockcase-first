@@ -1,64 +1,49 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
+# 勤怠管理システム
+従業員の勤怠打刻・管理（勤怠情報の確認）
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+<img width="1497" alt="スクリーンショット 2024-05-09 22 51 15" src="https://github.com/uchi-a000/Mockcase-first/assets/157282769/a7e5cd49-4ae5-4876-9f87-872ac5c156a6">
 
-## About Laravel
+## 作成した目的
+php・laravelを学習中で練習のために作成しました。
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## 機能一覧
+ユーザー会員登録/ログイン
+勤怠管理機能（出勤開始/終了・休憩開始/終了）
+日付別勤怠ページ
+ユーザー一覧ページ
+ユーザー毎の勤務表ページ
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## 使用技術（実行環境）
+・PHP 8.0
+・laravel 10.0
+・MySQL  8.0
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+## テーブル設計
+<img width="635" alt="スクリーンショット 2024-05-09 23 35 38" src="https://github.com/uchi-a000/Mockcase-first/assets/157282769/7b7a48c1-4456-4aa9-b4e3-6b3c88fc6038">
 
-## Learning Laravel
+## ER 図
+<img width="991" alt="スクリーンショット 2024-05-09 23 21 26" src="https://github.com/uchi-a000/Mockcase-first/assets/157282769/3cceb29c-decd-425a-bc95-d6e8d2b11b28">
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+## 環境構築
+1.  docker-compose exe php bash
+2.  composer install
+3.  .env.example ファイルから.env を作成し、環境変数を変更
+4.  php artisan key:generate
+5.  php artisan migrate
+6.  php artisan db:seed
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+## その他（機能詳細）
+○勤怠管理
+(打刻後は次に必要なボタン以外は非表示にしています（誤打刻防止）)
+勤務開始→勤務終了と休憩開始打刻のみ表示
+休憩開始→休憩終了打刻のみ表示
+休憩終了→休憩開始と勤務終了打刻の表示
+勤務終了→勤務開始打刻のみ表示
 
-## Laravel Sponsors
+○その他
+日を跨ぐと翌日の出勤に切り替わる（休憩含む）
+休憩は何度でも取得可能
+日付一覧ページ：年月日検索可能
+ユーザー一覧ページ：名前、メールアドレスで曖昧検索可能
+ユーザー毎の勤務表ページ：月検索可能
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
-
-### Premium Partners
-
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).

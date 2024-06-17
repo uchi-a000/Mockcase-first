@@ -16,6 +16,10 @@ class ExampleTest extends TestCase
     {
         $response = $this->get('/');
 
-        $response->assertStatus(200);
+        // もし認証が必要なら、ユーザーを作成してログインする
+        // $user = \App\Models\User::factory()->create();
+        // $response = $this->actingAs($user)->get('/');
+
+        $response->assertStatus(302);
     }
 }
