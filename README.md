@@ -19,7 +19,7 @@ php・laravelを学習中で練習のために作成しました。
 ・MySQL  8.0
 
 ## テーブル設計
-<img width="635" alt="スクリーンショット 2024-05-09 23 35 38" src="https://github.com/uchi-a000/Mockcase-first/assets/157282769/7b7a48c1-4456-4aa9-b4e3-6b3c88fc6038">
+<img width="636" alt="スクリーンショット 2024-06-18 21 50 22" src="https://github.com/uchi-a000/Mockcase-first/assets/157282769/6c0cd9f4-b6a5-44c5-989c-127a475154dc">
 
 ## ER 図
 <img width="991" alt="スクリーンショット 2024-05-09 23 21 26" src="https://github.com/uchi-a000/Mockcase-first/assets/157282769/3cceb29c-decd-425a-bc95-d6e8d2b11b28">
